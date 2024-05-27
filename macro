@@ -1,0 +1,32 @@
+Sub ReorganizarDatos()
+    Dim ws As Worksheet
+    Set ws = ThisWorkbook.Sheets("hoja1")
+    
+    Dim lastRow As Long
+    lastRow = ws.Cells(ws.Rows.Count, "A").End(xlUp).Row
+    
+    Dim headers As Variant
+    headers = Array("Node name", "GB xfer", "DURATION", "start date", "start time", "enddate", "end time")
+    
+    Dim newWs As Worksheet
+    Set newWs = ThisWorkbook.Sheets.Add(After:=ThisWorkbook.Sheets(ThisWorkbook.Sheets.Count))
+    newWs.Name = "Reorganizada"
+    
+    Dim i As Long, j As Long, newRow As Long
+    newRow = 2
+    
+    ' Escribe los encabezados en la nueva hoja
+    For i = LBound(headers) To UBound(headers)
+        newWs.Cells(1, i + 1).Value = headers(i)
+    Next i
+    
+    ' Reorganiza los datos
+    For i = 1 To lastRow Step 7
+        For j = 0 To 6
+            newWs.Cells(newRow, j + 1).Value = ws.Cells(i + j, 2).Value
+        Next j
+        newRow = newRow + 1
+    Next i
+    
+    MsgBox "Datos reorganizados correctamente en la hoja 'Reorganizada'."
+End Sub
