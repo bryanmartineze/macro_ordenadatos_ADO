@@ -14,5 +14,6 @@ Usar la macro
 2. Dar click en 'Insertar' en la parte superior y se abrirá un 'Cuadro de texto' donde se debe insertar el código del archivo 'macro' de este repositorio, cerrar la ventana de opción programática
 3. Dentro de nuestro Excel, usar la combinación ALT + f8 para abrir nuestro menu de macros, notese que se debe usar el macro 'ReorganizarDatos' y dar click en 'Ejecutar'
 4. Vualá, su archivo de ADO estará organizado
+5. IMPORTANTE, debes guardar el archivo en formato .xslx para conservar la hoja de 'Reorganizada'
 
-Créditos a bryanmartineze, Solution Architect SUSE GMbH
+Créditos a bryanmartineze, Solution Architect SUSE GMbH, revisa mis otros proyectos en mi perfil de GitHub!
