@@ -10,4 +10,9 @@ Formatear datos
 7. Una vez el menu abierto, dejar la opción "Delimitados" y dar siguiente, desmarcar 'Tabulación' y marca 'Otros:', poner el caracter ':' para delimitar los datos, dar click en siguiente y luego finalizar
 
 Usar la macro
-1. Usar ALT + F11 para abrir
+1. Usar ALT + F11 para abrir la opción programática de macros
+2. Dar click en 'Insertar' en la parte superior y se abrirá un 'Cuadro de texto' donde se debe insertar el código del archivo 'macro' de este repositorio, cerrar la ventana de opción programática
+3. Dentro de nuestro Excel, usar la combinación ALT + f8 para abrir nuestro menu de macros, notese que se debe usar el macro 'ReorganizarDatos' y dar click en 'Ejecutar'
+4. Vualá, su archivo de ADO estará organizado
+
+Créditos a bryanmartineze, Solution Architect SUSE GMbH
